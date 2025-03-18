@@ -3,7 +3,7 @@ import Image from "./image";
 
 export default function MainImage(props) {
     const { url, title } = props.image;
-    const [audio] = useState(new Audio("src/assets/wiwiwi.mp3"));  // Înlocuiește cu calea către fișierul tău audio
+    const [audio] = useState(new Audio("src/assets/wiwiwi.mp3"));
 
     const playAudio = () => {
         audio.play();
