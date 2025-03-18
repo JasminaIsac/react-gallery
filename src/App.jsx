@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Gallery from "./components/gallery";
+import Gallery from "./components/Gallery";
 import images from './data/images.json';
-import MainImage from "./components/mainImage";
-import Buttons from "./components/buttons";
+import MainImage from "./components/MainImage";
+import Buttons from "./components/Buttons";
 
 function App() {
 const [cats, setCats] = useState(images)
@@ -43,7 +43,7 @@ return <>
 </div>
 <div id="gallerySection">
     <h1>Gallery</h1>
-    <Gallery cats={cats} currentImage={currentImage}></Gallery>
+    <Gallery cats={cats} currentImage={currentImage} setCurrentImage={setCurrentImage}></Gallery>
 </div>
 </>;
 }

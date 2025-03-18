@@ -1,5 +1,6 @@
 export default function Image (props) {
+    const {className, src, alt, onClick } = props;
     return(
-        <img className={`catImage ${props.className || ""}`} src={props.src} alt={props.alt}></img>
+        <img className={`catImage ${className || ""}`} src={src} alt={alt} onClick={onClick}></img>
     )
 }
